@@ -45,6 +45,7 @@ public class BlankFragment extends Fragment {
                     JSONObject objJson = new JSONObject(response);
                     if(objJson.getBoolean("success")==true){
                         JSONArray arrProducts= objJson.getJSONArray("products");
+
                         for (int i=0;i<arrProducts.length();i++){
                             JSONObject item = arrProducts.getJSONObject(i);
                             ProductModel temp=new ProductModel();
