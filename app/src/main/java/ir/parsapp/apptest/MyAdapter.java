@@ -15,7 +15,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         TextView name,price;
 
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(View itemView) {
             super(itemView);
             name=itemView.findViewById(R.id.item_name);
             price=itemView.findViewById(R.id.item_price);
